@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
+
+.borderless tbody tr td, .borderless thead tr th {
+    border: none;
+}
+
+td.negative {
+    color: red;
+}
+
+td.positive {
+    color: green;
+}
+
+.details td:first-child {
+    width: 200px;
+}
+
+.theme {
+  opacity: 1;
+  cursor: pointer;
+  font-family: Roboto;
+}
+
+.theme:hover {
+  opacity: 0.7;
+}
+
+#word-cloud-themes {
+
+}
