@@ -1,6 +1,13 @@
 @import "bootstrap";
 @import "default";
+@import "components/cloud";
+@import "signup";
+@import "plans";
 
 html, body {
   margin: 20px;
+}
+
+[data-ember-action] {
+  cursor: pointer;
 }

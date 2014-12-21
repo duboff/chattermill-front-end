@@ -18,10 +18,22 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+  
+  ENV['simple-auth'] = {
+    authorizer: 'simple-auth-authorizer:devise',
+    routeAfterAuthentication: 'welcome'
+  };
+
+  ENV['simple-auth-devise'] = {
+    serverTokenEndpoint : 'http://127.0.0.1:3000/users/sign_in'
+  }
+
+  
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = false;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;

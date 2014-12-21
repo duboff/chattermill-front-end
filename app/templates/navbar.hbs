@@ -12,7 +12,15 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li>{{#link-to 'about'}}About{{/link-to}}
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          {{#if session.isAuthenticated}}
+            <li> <a {{ action 'invalidateSession' }}>Logout</a> </li>
+          {{else}}
+            <li> {{#link-to 'signup'}}Sign Up{{/link-to}} </li>
+            <li> {{#link-to 'login'}}Sign In{{/link-to}} </li>
+          {{/if}}
       </ul>
     </div>
   </div>

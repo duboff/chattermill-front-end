@@ -1,0 +1,14 @@
+<section>
+  <h1> {{name}}: {{sentimentScore}}</h1>
+</section>
+<section>
+  <h1>Theme Cloud</h1>
+  <div class="col-lg-9 col-md-9">
+    <div class="word-cloud-container">
+      {{word-cloud data=projectThemes selectedTheme="setSelectedTheme"}}
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3">
+    {{theme-texts theme=theme}}
+  </div>
+</section>

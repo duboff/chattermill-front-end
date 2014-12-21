@@ -1,0 +1,12 @@
+<section>
+  <h1>{{fullName}}</h1>
+  <p>Name: {{fullName}}</p>
+  <p>Email: {{email}}</p>
+</section>
+<section>
+  {{#if company}}
+    <h1>{{#link-to 'company' company}}{{company.name}}{{/link-to}}</h1>
+  {{else}}
+     <h1>{{#link-to 'companies.new'}}Create company{{/link-to}}</h1>
+  {{/if}}
+</section>

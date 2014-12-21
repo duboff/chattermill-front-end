@@ -1,0 +1,12 @@
+<h1>Dashboard</h1>
+
+<section>
+  {{#each project in model.projects}}
+    <li>{{#link-to "project" project}} {{project.name}} {{/link-to}}</li>
+  {{/each}}
+</section>
+<section>
+  <p>
+    {{#link-to "projects.new"}} Create a new project {{/link-to}}
+  </p>
+</section>

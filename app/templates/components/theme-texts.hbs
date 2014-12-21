@@ -1,0 +1,8 @@
+{{#if theme}}
+  <h2> {{theme.body}}: {{theme.sentimentScore}}</h1>
+  <ul>
+    {{#each text in theme.texts}}
+      <li> {{text.body}} </li>
+    {{/each}}
+  </ul>
+{{/if}}
